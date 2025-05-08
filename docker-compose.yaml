@@ -46,7 +46,8 @@ x-common-env: &common-env
 
 services:
   playwright-service:
-    build: apps/playwright-service-ts
+    #build: apps/playwright-service-ts
+    image: loorisr/patchright-scrape-api:latest
     environment:
       PORT: ${PW_PORT:-3000}
       PROXY_SERVER: ${PROXY_SERVER}
