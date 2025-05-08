@@ -48,7 +48,7 @@ services:
   playwright-service:
     build: apps/playwright-service-ts
     environment:
-      PORT: ${PWPORT_PORT:-3000}
+      PORT: ${PW_PORT:-3000}
       PROXY_SERVER: ${PROXY_SERVER}
       PROXY_USERNAME: ${PROXY_USERNAME}
       PROXY_PASSWORD: ${PROXY_PASSWORD}
